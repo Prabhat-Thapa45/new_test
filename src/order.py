@@ -1,14 +1,10 @@
-"""
-processes requests from api to take orders
-"""
-from typing import Tuple, Union
-from src.utility.constants import BQ_SIZE, STOCK, YOUR_CART
+""" has all the functionalities to make order for """
+
+from src.utility.constants import STOCK, BQ_SIZE, YOUR_CART
+from typing import Union, Tuple
 
 
-def cancel() -> None:
-    """
-    cancels order, updates the stock and clears YOUR_CART
-    """
+def cancel():
     for item_1 in YOUR_CART:
         for item_2 in STOCK:
             if item_1["flower_name"] == item_2["flower_name"]:
