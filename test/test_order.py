@@ -1,3 +1,5 @@
+""" this module tests order.py """
+
 from src.order import Order, cancel
 from src.utility.constants import BQ_SIZE, STOCK, YOUR_CART
 
@@ -46,9 +48,3 @@ class TestOrders:
     def test_proceed_to_buy(self):
         # clears items from your cart once the order is placed
         assert YOUR_CART == []
-
-
-
-
-
-
