@@ -1,3 +1,5 @@
+""" this module tests order_api.py """
+
 from src.utility.constants import BQ_SIZE, YOUR_CART
 
 
@@ -38,9 +40,7 @@ class TestPost:
         # giving bouquet size of 4
         order_client.post(url, data={'bouquet_size': 4})
         for i in ['h', 6, -2]:
-            response = order_client.post(url, data={'number': i, 'flower_name': 'Rose', 'price': 2.20,
-                                              'in_stock': 10}
-                                   )
+            response = order_client.post(url, data={'number': i, 'flower_name': 'Rose', 'price': 2.20, 'in_stock': 10})
             assert response.status_code == 422
             assert response.request.path == url
 
