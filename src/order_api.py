@@ -1,10 +1,9 @@
-"""
-has all the view functions to deal with taking order
-"""
+""" has view functions to make order and handle the requests got from api """
+
 from flask import flash, render_template, request
-from src.order import Order, cancel
-from src.utility.constants import BQ_SIZE, STOCK, YOUR_CART
+from src.utility.constants import STOCK, BQ_SIZE, YOUR_CART
 from src.utility.validate_input import validate_int
+from src.order import Order, cancel
 
 
 def order_routes(app):
