@@ -1,3 +1,8 @@
+"""
+This acts as a database for our project
+"""
+
+
 STOCK = [{
     "flower_name": "Rose",
     "quantity": 20,

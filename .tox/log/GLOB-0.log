@@ -1,0 +1,81 @@
+action: GLOB, msg: packaging
+cwd: C:\Users\prabhatthapaeu\PycharmProjects\new_test
+cmd: 'c:\users\prabhatthapaeu\appdata\local\programs\python\python39\python.exe' setup.py sdist --formats=zip --dist-dir '.tox\dist'
+c:\users\prabhatthapaeu\appdata\local\programs\python\python39\lib\distutils\dist.py:274: UserWarning: Unknown distribution option: 'python_requirement'
+  warnings.warn(msg)
+running sdist
+running egg_info
+writing pkg_flower_bq_shop.egg-info\PKG-INFO
+writing dependency_links to pkg_flower_bq_shop.egg-info\dependency_links.txt
+writing top-level names to pkg_flower_bq_shop.egg-info\top_level.txt
+reading manifest file 'pkg_flower_bq_shop.egg-info\SOURCES.txt'
+writing manifest file 'pkg_flower_bq_shop.egg-info\SOURCES.txt'
+warning: sdist: standard file not found: should have one of README, README.rst, README.txt, README.md
+
+running check
+warning: check: missing required meta-data: url
+
+warning: check: missing meta-data: if 'author' supplied, 'author_email' should be supplied too
+
+creating pkg-flower-bq-shop-1.0.0
+creating pkg-flower-bq-shop-1.0.0\pkg_flower_bq_shop.egg-info
+creating pkg-flower-bq-shop-1.0.0\src
+creating pkg-flower-bq-shop-1.0.0\src\utility
+creating pkg-flower-bq-shop-1.0.0\test
+copying files to pkg-flower-bq-shop-1.0.0...
+copying setup.py -> pkg-flower-bq-shop-1.0.0
+copying pkg_flower_bq_shop.egg-info\PKG-INFO -> pkg-flower-bq-shop-1.0.0\pkg_flower_bq_shop.egg-info
+copying pkg_flower_bq_shop.egg-info\SOURCES.txt -> pkg-flower-bq-shop-1.0.0\pkg_flower_bq_shop.egg-info
+copying pkg_flower_bq_shop.egg-info\dependency_links.txt -> pkg-flower-bq-shop-1.0.0\pkg_flower_bq_shop.egg-info
+copying pkg_flower_bq_shop.egg-info\top_level.txt -> pkg-flower-bq-shop-1.0.0\pkg_flower_bq_shop.egg-info
+copying src\__init__.py -> pkg-flower-bq-shop-1.0.0\src
+copying src\add_flower.py -> pkg-flower-bq-shop-1.0.0\src
+copying src\add_flower_api.py -> pkg-flower-bq-shop-1.0.0\src
+copying src\execute.py -> pkg-flower-bq-shop-1.0.0\src
+copying src\order.py -> pkg-flower-bq-shop-1.0.0\src
+copying src\order_api.py -> pkg-flower-bq-shop-1.0.0\src
+copying src\welcome_api.py -> pkg-flower-bq-shop-1.0.0\src
+copying src\utility\__init__.py -> pkg-flower-bq-shop-1.0.0\src\utility
+copying src\utility\constants.py -> pkg-flower-bq-shop-1.0.0\src\utility
+copying src\utility\validate_input.py -> pkg-flower-bq-shop-1.0.0\src\utility
+copying test\__init__.py -> pkg-flower-bq-shop-1.0.0\test
+copying test\conftest.py -> pkg-flower-bq-shop-1.0.0\test
+copying test\test_add_flower.py -> pkg-flower-bq-shop-1.0.0\test
+copying test\test_add_flower_api.py -> pkg-flower-bq-shop-1.0.0\test
+copying test\test_order.py -> pkg-flower-bq-shop-1.0.0\test
+copying test\test_order_api.py -> pkg-flower-bq-shop-1.0.0\test
+copying test\test_validate_input.py -> pkg-flower-bq-shop-1.0.0\test
+copying test\test_welcome_api.py -> pkg-flower-bq-shop-1.0.0\test
+Writing pkg-flower-bq-shop-1.0.0\setup.cfg
+creating '.tox\dist\pkg-flower-bq-shop-1.0.0.zip' and adding 'pkg-flower-bq-shop-1.0.0' to it
+adding 'pkg-flower-bq-shop-1.0.0'
+adding 'pkg-flower-bq-shop-1.0.0\pkg_flower_bq_shop.egg-info'
+adding 'pkg-flower-bq-shop-1.0.0\src'
+adding 'pkg-flower-bq-shop-1.0.0\test'
+adding 'pkg-flower-bq-shop-1.0.0\PKG-INFO'
+adding 'pkg-flower-bq-shop-1.0.0\setup.cfg'
+adding 'pkg-flower-bq-shop-1.0.0\setup.py'
+adding 'pkg-flower-bq-shop-1.0.0\pkg_flower_bq_shop.egg-info\dependency_links.txt'
+adding 'pkg-flower-bq-shop-1.0.0\pkg_flower_bq_shop.egg-info\PKG-INFO'
+adding 'pkg-flower-bq-shop-1.0.0\pkg_flower_bq_shop.egg-info\SOURCES.txt'
+adding 'pkg-flower-bq-shop-1.0.0\pkg_flower_bq_shop.egg-info\top_level.txt'
+adding 'pkg-flower-bq-shop-1.0.0\src\utility'
+adding 'pkg-flower-bq-shop-1.0.0\src\add_flower.py'
+adding 'pkg-flower-bq-shop-1.0.0\src\add_flower_api.py'
+adding 'pkg-flower-bq-shop-1.0.0\src\execute.py'
+adding 'pkg-flower-bq-shop-1.0.0\src\order.py'
+adding 'pkg-flower-bq-shop-1.0.0\src\order_api.py'
+adding 'pkg-flower-bq-shop-1.0.0\src\welcome_api.py'
+adding 'pkg-flower-bq-shop-1.0.0\src\__init__.py'
+adding 'pkg-flower-bq-shop-1.0.0\src\utility\constants.py'
+adding 'pkg-flower-bq-shop-1.0.0\src\utility\validate_input.py'
+adding 'pkg-flower-bq-shop-1.0.0\src\utility\__init__.py'
+adding 'pkg-flower-bq-shop-1.0.0\test\conftest.py'
+adding 'pkg-flower-bq-shop-1.0.0\test\test_add_flower.py'
+adding 'pkg-flower-bq-shop-1.0.0\test\test_add_flower_api.py'
+adding 'pkg-flower-bq-shop-1.0.0\test\test_order.py'
+adding 'pkg-flower-bq-shop-1.0.0\test\test_order_api.py'
+adding 'pkg-flower-bq-shop-1.0.0\test\test_validate_input.py'
+adding 'pkg-flower-bq-shop-1.0.0\test\test_welcome_api.py'
+adding 'pkg-flower-bq-shop-1.0.0\test\__init__.py'
+removing 'pkg-flower-bq-shop-1.0.0' (and everything under it)

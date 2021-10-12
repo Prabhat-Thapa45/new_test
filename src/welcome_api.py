@@ -1,24 +1,26 @@
+"""
+has view function to route to welcome pages
+"""
 from flask import render_template
 
 
 def welcome_routes(app):
     """
-    Renders templates for initial pages
-    :param app:
+    has view functions
     """
-    @app.route('/')
-    @app.route('/home')
+    @app.route("/")
+    @app.route("/home")
     def index() -> str:
-        return render_template('index.html')
+        return render_template("index.html")
 
-    @app.route('/about')
+    @app.route("/about")
     def about() -> str:
-        return render_template('about.html')
+        return render_template("about.html")
 
-    @app.route('/contact')
+    @app.route("/contact")
     def contact() -> str:
-        return render_template('contact.html')
+        return render_template("contact.html")
 
-    @app.route('/menu')
+    @app.route("/menu")
     def menu() -> str:
-        return render_template('menu.html')
+        return render_template("menu.html")

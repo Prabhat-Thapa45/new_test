@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: pkg-flower-bq-shop
+Version: 1.0.0
+Summary: An flower shop app using flask
+Home-page: UNKNOWN
+Author: Prabhat
+Author-email: UNKNOWN
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: Not required
+Classifier: Operating System :: Os Independent

@@ -1,12 +1,18 @@
-from src.utility.constants import STOCK, BQ_SIZE, YOUR_CART
-from typing import Union, Tuple
+"""
+processes requests from api to take orders
+"""
+from typing import Tuple, Union
+from src.utility.constants import BQ_SIZE, STOCK, YOUR_CART
 
 
-def cancel():
+def cancel() -> None:
+    """
+    cancels order, updates the stock and clears YOUR_CART
+    """
     for item_1 in YOUR_CART:
         for item_2 in STOCK:
-            if item_1['flower_name'] == item_2['flower_name']:
-                item_2['quantity'] += item_1['quantity']
+            if item_1["flower_name"] == item_2["flower_name"]:
+                item_2["quantity"] += item_1["quantity"]
                 break
     YOUR_CART.clear()
 
@@ -45,7 +51,13 @@ class Order:
         Adds item to your cart and reduces the bouquet size
         :return: list of items in your cart and updated bouquet size
         """
-        YOUR_CART.append({"flower_name": self.flower_name, "quantity": self.valid_order_quantity, "price": self.price})
+        YOUR_CART.append(
+            {
+                "flower_name": self.flower_name,
+                "quantity": self.valid_order_quantity,
+                "price": self.price,
+            }
+        )
         BQ_SIZE[0] -= self.valid_order_quantity
         return YOUR_CART
 
@@ -55,9 +67,9 @@ class Order:
         :return: updated quantity
         """
         for item in STOCK:
-            if item['flower_name'] == self.flower_name:
-                item['quantity'] -= self.valid_order_quantity
-                return item['quantity']
+            if item["flower_name"] == self.flower_name:
+                item["quantity"] -= self.valid_order_quantity
+                return item["quantity"]
 
     @staticmethod
     def check_order_criteria() -> True:

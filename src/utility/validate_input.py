@@ -1,3 +1,6 @@
+"""
+This module validates int and float datatype and returns a valid int and float datatype
+"""
 from typing import Union
 
 
