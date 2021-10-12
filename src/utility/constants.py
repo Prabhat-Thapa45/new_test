@@ -1,7 +1,4 @@
-"""
-This acts as a database for our project
-"""
-
+""" This acts as a database for our project """
 
 STOCK = [{
     "flower_name": "Rose",
