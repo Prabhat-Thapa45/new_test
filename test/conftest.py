@@ -1,3 +1,5 @@
+""" This has clients for welcome, ordering and adding flowers and thier urls along with objects for adding and ordering flower """
+
 from flask import Flask
 from src.welcome_api import welcome_routes
 from src.order_api import order_routes
@@ -6,20 +8,6 @@ from src.utility.constants import BQ_SIZE
 import pytest
 from src.order import Order
 from src.add_flower import AddFlower
-
-
-@pytest.fixture()
-def stock():
-    return [{
-        "flower_name": "Rose",
-        "quantity": 20,
-        "price": 4.50
-    }, {
-        "flower_name": "Lily",
-        "quantity": 20,
-        "price": 5.50
-    }
-    ]
 
 
 @pytest.fixture()
