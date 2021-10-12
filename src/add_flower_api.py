@@ -1,14 +1,18 @@
-"""
-contains all the view functions needed to add flower or new flower
-"""
-from typing import Union
-from flask import Response, flash, redirect, render_template, request, url_for
-from src.add_flower import AddFlower
+""" has all the view functions to route for adding new or in stock of existing flower """
+
+from flask import flash, render_template, request, redirect, url_for, Response
 from src.utility.constants import STOCK
-from src.utility.validate_input import validate_float, validate_int
+from src.utility.validate_input import validate_int, validate_float
+from src.add_flower import AddFlower
+from typing import Union
 
 
 def add_flower_routes(app):
+    """
+    Renders templates for adding flowers in stock
+    :param app:
+    """
+
     @app.route("/menu/add_flower", methods=["GET", "POST"])
     def add_flower() -> Union[str, Response]:
         """
