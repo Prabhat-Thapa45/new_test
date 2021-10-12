@@ -1,6 +1,4 @@
-"""
-adds new flower in stock or adds flowers if user feels need to maintain stock for any flower
-"""
+""" adds new flower in stock or adds flowers if user feels need to maintain stock for any flower """
 from src.utility.constants import STOCK
 
 
