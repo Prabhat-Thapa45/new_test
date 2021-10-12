@@ -1,13 +1,14 @@
-"""
-has view function to route to welcome pages
-"""
+""" has all the view functions for initial welcome pages """
+
 from flask import render_template
 
 
 def welcome_routes(app):
     """
-    has view functions
+    Renders templates for initial pages
+    :param app:
     """
+
     @app.route("/")
     @app.route("/home")
     def index() -> str:
